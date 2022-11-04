@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library site</title>
+</head>
+<body>
+    <div class="header-wrap">
+        <div class="page-header">
+            <h1>Book management application</h1>
+        </div>
+        <div class="page-subheader">
+            <h4>This is a project by <a href="https://github.com/MortenMunk">Morten Munk</a> as part of the Odin Project.</h4>
+        </div>        
+    </div>
+
+    <form id="form" action="/" method="GET">
+        <div class="input-form">
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" autocomplete="off" required>
+        </div>
+        <div class="input-form">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" autocomplete="off" required>
+        </div>
+        <div class="input-form">
+            <label for="author">Pages:</label><br>
+            <input type="number" id="pages" name="pages" autocomplete="off" required>
+        </div>
+        <div class="checkbox-form">
+            <label for="isRead">Have you already read this book?</label><br>
+            <input type="checkbox" id="isRead" name="isRead">
+        </div>
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr class="tablehead">
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th><!-- DELETE BUTTON HERE WITH JS--></th>
+                    <th><!-- CHANGE READ BUTTON HERE WITH--></th>
+                </tr>
+            </thead>
+            <tbody id="book-table">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
